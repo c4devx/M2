@@ -102,6 +102,12 @@ dbt docs generate
 dbt docs serve --port 8081
 Para levantar un servidor local y ver la documentación generada --> http://localhost:8081.
 
+### Documentacion DBT
+
+![DBT_stg](assets/dbt/dbt_stg.png)
+![DBT int](assets/dbt/dbt_int.png)
+![DBT kpi](assets/dbt/dbt_kpi.png)
+
 
 --- 
 
