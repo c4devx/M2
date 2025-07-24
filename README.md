@@ -104,9 +104,9 @@ Para levantar un servidor local y ver la documentación generada --> http://loca
 
 ### Documentacion DBT
 
-![DBT_stg](assets/dbt/dbt_stg.png)
-![DBT int](assets/dbt/dbt_int.png)
-![DBT kpi](assets/dbt/dbt_kpi.png)
+![DBT_stg](assets/dbt/dbt-stg.png)
+![DBT int](assets/dbt/dbt-int.png)
+![DBT kpi](assets/dbt/dbt-kpi.png)
 
 
 --- 
