@@ -674,7 +674,7 @@ with tab4:
     st.subheader("Tabla - Métricas productos")
 
     columnas_importantes = ['nombre', 'categoria_nombre', 'precio', 'stock', 'total_vendido', 
-                          'ingresos_totales', 'calificacion_promedio', 'total_reseñas', 
+                          'ingresos_totales', 'calificacion_promedio', 'total_resenas', 
                           'categoria_ventas', 'categoria_calificacion']
     renombrar_cols = {
     'nombre': 'Nombre',
