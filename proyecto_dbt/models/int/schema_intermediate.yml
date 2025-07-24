@@ -1,0 +1,101 @@
+version: 2
+models:
+- name: int_metricas_productos
+  description: Contiene métricas agregadas de productos como promedio de calificación,
+    total de reseñas y ventas.
+  columns:
+  - name: ProductoID
+    tests:
+    - not_null
+    - unique
+  - name: calificacion_promedio
+    tests:
+    - not_null
+  - name: TotalResenas
+    tests: []
+  - name: TotalVentas
+    tests: []
+- name: int_usuarios_enriquecidos
+  description: Enriquece los datos de usuarios con métricas como cantidad de órdenes
+    y gasto total.
+  columns:
+  - name: UsuarioID
+    tests:
+    - not_null
+    - unique
+  - name: Nombre
+    tests: []
+  - name: Apellido
+    tests: []
+  - name: TotalOrdenes
+    tests: []
+  - name: TotalGastado
+    tests: []
+- name: int_detalle_ordenes_enriquecido
+  description: Join entre órdenes y productos para detalle enriquecido.
+  columns:
+  - name: DetalleID
+    tests:
+    - not_null
+    - unique
+  - name: OrdenID
+    tests:
+    - not_null
+  - name: ProductoID
+    tests:
+    - not_null
+  - name: Cantidad
+    tests: []
+  - name: PrecioUnitario
+    tests: []
+- name: int_resenas_agregadas
+  description: Agrega contexto adicional a las reseñas con información del producto
+    y del usuario.
+  columns:
+  - name: ReseñaID
+    tests:
+    - not_null
+    - unique
+  - name: UsuarioID
+    tests:
+    - not_null
+  - name: ProductoID
+    tests:
+    - not_null
+  - name: Calificacion
+    tests: []
+  - name: Comentario
+    tests: []
+  - name: Fecha
+    tests: []
+  - name: producto_nombre
+    tests: []
+  - name: categoria_nombre
+    tests: []
+  - name: precio_producto
+    tests: []
+  - name: usuario_nombre
+    tests: []
+  - name: segmento_antiguedad
+    tests: []
+  - name: sentimiento_calificacion
+    tests: []
+  - name: tipo_comentario
+    tests: []
+  - name: año_reseña
+    tests: []
+  - name: mes_reseña
+    tests: []
+- name: int_productos_enriquecidos
+  description: Datos de productos con detalles de categoría y stock actual.
+  columns:
+  - name: ProductoID
+    tests:
+    - not_null
+    - unique
+  - name: Nombre
+    tests: []
+  - name: Stock
+    tests: []
+  - name: Categoria
+    tests: []

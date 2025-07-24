@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: stg_carrito
+    description: Datos crudos del carrito de compras.
+    columns:
+      - name: CarritoID
+        tests: [not_null, unique]
+      - name: UsuarioID
+        tests: [not_null]
+      - name: ProductoID
+        tests: [not_null]
+      - name: Cantidad
+        tests: []
+      - name: FechaAgregado
+        tests: []
+
+  - name: stg_direcciones_envio
+    description: Datos crudos de direcciones de envío.
+    columns:
+      - name: DireccionID
+        tests: [not_null, unique]
+      - name: UsuarioID
+        tests: [not_null]
+      - name: Calle
+        tests: []
+      - name: Ciudad
+        tests: []
+      - name: Provincia
+        tests: []
+      - name: CodigoPostal
+        tests: []
+
+  - name: stg_detalle_ordenes
+    description: Detalles de productos por orden.
+    columns:
+      - name: DetalleID
+        tests: [not_null, unique]
+      - name: OrdenID
+        tests: [not_null]
+      - name: ProductoID
+        tests: [not_null]
+      - name: Cantidad
+        tests: []
+      - name: PrecioUnitario
+        tests: []
+
+  - name: stg_productos
+    description: Datos crudos de productos.
+    columns:
+      - name: ProductoID
+        tests: [not_null, unique]
+      - name: Nombre
+        tests: []
+      - name: Precio
+        tests: []
+      - name: Stock
+        tests: []
+      - name: CategoriaID
+        tests: []
+
+  - name: stg_categorias
+    description: Datos de categorías de productos.
+    columns:
+      - name: CategoriaID
+        tests: [not_null, unique]
+      - name: Nombre
+        tests: []
+      - name: Descripcion
+        tests: []
+
+  - name: stg_resenas_productos
+    description: Reseñas de productos realizadas por los usuarios.
+    columns:
+      - name: ReseñaID
+        tests: [not_null, unique]
+      - name: UsuarioID
+        tests: [not_null]
+      - name: ProductoID
+        tests: [not_null]
+      - name: Calificacion
+        tests: []
+      - name: Comentario
+        tests: []
+      - name: Fecha
+        tests: []

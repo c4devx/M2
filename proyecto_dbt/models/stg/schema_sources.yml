@@ -1,0 +1,15 @@
+version: 2
+sources:
+- name: public
+  tables:
+  - name: usuarios
+  - name: categorias
+  - name: productos
+  - name: ordenes
+  - name: detalleordenes
+  - name: direccionesenvio
+  - name: carrito
+  - name: metodospago
+  - name: ordenesmetodospago
+  - name: resenasproductos
+  - name: historialpagos

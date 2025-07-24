@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: mart_ordenes_completadas
+    description: "Tabla base con órdenes completadas para optimizar consultas de KPIs."
+    columns:
+      - name: OrdenID
+        tests: [not_null]
+      - name: UsuarioID
+        tests: [not_null]
+      - name: Total
+        tests: []
+      - name: FechaOrden
+        tests: []
+      - name: Estado
+        tests: []
+
+  - name: kpi_recompra_clientes
+    description: "KPI: Porcentaje de clientes que realizaron más de una compra."
+    columns:
+      - name: kpi_nombre
+        tests: [not_null]
+      - name: valor
+        tests: [not_null]
+      - name: unidad
+        tests: []
+      - name: fecha_calculo
+        tests: []
+      - name: descripcion
+        tests: []
+
+  - name: kpi_satisfaccion_productos
+    description: "KPI: Promedio de calificaciones de productos."
+    columns:
+      - name: kpi_nombre
+        tests: [not_null]
+      - name: valor
+        tests: [not_null]
+      - name: unidad
+        tests: []
+      - name: fecha_calculo
+        tests: []
+      - name: descripcion
+        tests: []
+
+  - name: kpi_ticket_promedio
+    description: "KPI: Valor promedio gastado por orden completada."
+    columns:
+      - name: kpi_nombre
+        tests: [not_null]
+      - name: valor
+        tests: [not_null]
+      - name: unidad
+        tests: []
+      - name: fecha_calculo
+        tests: []
+      - name: descripcion
+        tests: []
+
+  - name: kpi_valor_total_ventas
+    description: "KPI: Monto total facturado en órdenes completadas."
+    columns:
+      - name: kpi_nombre
+        tests: [not_null]
+      - name: valor
+        tests: [not_null]
+      - name: unidad
+        tests: []
+      - name: fecha_calculo
+        tests: []
+      - name: descripcion
+        tests: []
