@@ -120,7 +120,7 @@ El mismo, esta dividido en cuatro tabs:
 
 
 ### Tab KPIs
-![KPIs](assets/kpis.png)
+![KPIs](assets/dash/kpis.png)
 
 ### Tab Facturación
 Se presentan varios gráficos. 
@@ -131,7 +131,7 @@ Se presentan varios gráficos.
 * Facturación por categoría
 
 
-![Facturación](assets/facturacion-vs-tiempo.png)
+![Facturación](assets/dash/facturacion-vs-tiempo.png)
 
 
 ### Tab Ventas
@@ -140,7 +140,7 @@ Varios gráficos que relación alguna medida de ventas con distintas variables.
 * Cantidad de órdenes vs. tiempo
 * Unidades vendidas vs. tiempo
 
-![Ventas](assets/ventas-vs-tiempo-1.png)
+![Ventas](assets/dash/ventas-vs-tiempo-1.png)
 
 ### Tab Productos
 Varios gráficos que relacinan alguna característica de prodcutos con distintas variables.
@@ -148,7 +148,7 @@ Varios gráficos que relacinan alguna característica de prodcutos con distintas
 * Top 10 ventas
 * Stock 
 
-![Productos](assets/productos-1.png)
+![Productos](assets/dash/productos-1.png)
 
 
 ### Dashboard live
